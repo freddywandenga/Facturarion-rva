@@ -1,0 +1,39 @@
+﻿INSTALLER FACTURATION RVA SUR ANDROID
+
+Principe : l'application devient une "application web installable" (PWA).
+Il faut la mettre une fois en ligne (gratuit), puis l'installer depuis Chrome.
+Ensuite elle s'ouvre depuis l'ecran d'accueil, en plein ecran, et fonctionne SANS internet.
+
+ETAPE 1 - Mettre les 5 fichiers en ligne (une seule fois, depuis un PC)
+Fichiers : index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png
+
+Option A : GitHub Pages (gratuit)
+ 1. Creez un compte sur github.com, puis New repository (nom : facturation-rva, Public).
+ 2. Cliquez "uploading an existing file", glissez les 5 fichiers, puis "Commit changes".
+ 3. Settings > Pages > Branch : main, dossier / (root) > Save.
+ 4. Apres 1 a 2 minutes, l'adresse est :
+    https://VOTRE-NOM.github.io/facturation-rva/
+
+Option B : Netlify Drop (gratuit)
+ 1. Allez sur app.netlify.com/drop.
+ 2. Glissez le dossier contenant les 5 fichiers. Vous obtenez une adresse https.
+
+ETAPE 2 - Installer sur le telephone Android
+ 1. Ouvrez l'adresse dans Chrome (avec internet, la premiere fois).
+ 2. Menu (trois points) > "Installer l'application" (ou "Ajouter a l'ecran d'accueil" > "Installer").
+ 3. L'icone "Facturation RVA" apparait sur l'ecran d'accueil.
+
+DONNEES ET SAUVEGARDE
+ - Les factures restent sur le telephone (rien n'est envoye sur internet).
+ - Les donnees sont propres a chaque appareil : le telephone et le PC ne partagent rien.
+   Pour les transferer : "Exporter (JSON)" sur un appareil, "Importer (JSON)" sur l'autre.
+ - Faites regulierement un export JSON : vider les donnees de Chrome efface les factures.
+
+CONFIDENTIALITE
+ L'adresse est publique : toute personne qui la connait peut ouvrir l'application et voir les
+ valeurs par defaut contenues dans le code (numero de compte RVA, noms des signataires, tarifs).
+ Vos factures, elles, ne sont jamais publiees.
+
+MISE A JOUR
+ Remplacez index.html dans le depot (ou redeposez le dossier sur Netlify).
+ L'application se met a jour toute seule a la prochaine ouverture avec internet.

@@ -1,0 +1,16 @@
+{
+  "name": "Facturation RVA",
+  "short_name": "Facturation RVA",
+  "description": "Facturation des redevances aéroportuaires – RVA Gemena",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0b5d8a",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
